@@ -1,0 +1,52 @@
+{
+  "questions": [
+    {
+      "id": "ancient_1",
+      "era": "Ancient",
+      "question": "What key idea did Hippocrates introduce?",
+      "choices": ["Germ theory", "The Four Humours", "Vaccination"],
+      "answerIndex": 1,
+      "explain": "Hippocrates promoted clinical observation and the Four Humours."
+    },
+    {
+      "id": "ancient_2",
+      "era": "Ancient",
+      "question": "What were the Romans best known for?",
+      "choices": ["Public health engineering", "Anatomy knowledge", "DNA"],
+      "answerIndex": 0,
+      "explain": "Romans were skilled at sewers, baths and aqueducts."
+    },
+    {
+      "id": "medieval_1",
+      "era": "Medieval",
+      "question": "Which factor slowed medical progress in medieval Europe?",
+      "choices": ["Government funding", "Church influence", "Germ theory rejection"],
+      "answerIndex": 1,
+      "explain": "Church control and limited access to texts contributed to stagnation."
+    },
+    {
+      "id": "renaissance_1",
+      "era": "Renaissance",
+      "question": "What did Vesalius study?",
+      "choices": ["Blood circulation", "Anatomy", "Germs"],
+      "answerIndex": 1,
+      "explain": "Vesalius produced modern anatomical studies through dissections."
+    },
+    {
+      "id": "industrial_1",
+      "era": "Industrial",
+      "question": "Who pioneered vaccination?",
+      "choices": ["Pasteur", "Snow", "Jenner"],
+      "answerIndex": 2,
+      "explain": "Edward Jenner developed smallpox vaccination techniques using cowpox."
+    },
+    {
+      "id": "modern_1",
+      "era": "Modern",
+      "question": "Who developed penicillin into an effective drug?",
+      "choices": ["Fleming", "Florey & Chain", "Lister"],
+      "answerIndex": 1,
+      "explain": "Florey & Chain scaled up production and clinical use of penicillin."
+    }
+  ]
+}
