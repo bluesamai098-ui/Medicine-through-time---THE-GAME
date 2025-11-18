@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Medicine Through Time — RPG</title>
+
+  <!-- iOS PWA meta -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+
+  <!-- PWA manifest -->
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- Prevent zoom on input focus for iOS -->
+  <meta name="format-detection" content="telephone=no" />
+
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Medicine Through Time</h1>
+      <div id="meta">
+        <span id="level">Lvl 1</span>
+        <span id="xp">XP 0</span>
+      </div>
+    </header>
+
+    <main id="container">
+      <!-- Scenes -->
+      <section id="scene-menu" class="scene active">
+        <div class="card">
+          <h2>Chrono-College</h2>
+          <p>Welcome, Aether. Restore medical knowledge across history.</p>
+          <div class="row">
+            <button id="btn-start" class="btn-primary">Start Campaign</button>
+            <button id="btn-continue" class="btn-ghost">Continue</button>
+          </div>
+          <p class="hint">Tip: Install to your Home Screen: Share → Add to Home Screen (Safari).</p>
+        </div>
+      </section>
+
+      <section id="scene-map" class="scene">
+        <div class="card">
+          <h2>Time Map</h2>
+          <div id="era-list" class="era-list"></div>
+          <div class="row">
+            <button id="btn-back-to-menu" class="btn-ghost">Back</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="scene-era" class="scene">
+        <div class="card">
+          <h2 id="era-title">ERA</h2>
+          <p id="era-intro"></p>
+          <div id="mentor-panel" class="mentor-panel"></div>
+          <div class="row">
+            <button id="btn-start-quest" class="btn-primary">Start Quest</button>
+            <button id="btn-map" class="btn-ghost">Map</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="scene-battle" class="scene">
+        <div class="card">
+          <h2 id="battle-title">Boss Battle</h2>
+          <div class="hp-row">
+            <div>Player</div>
+            <div class="hp-bar"><div id="hp-player" class="hp-fill"></div></div>
+            <div id="hp-player-text">100/100</div>
+          </div>
+          <div class="hp-row">
+            <div>Boss</div>
+            <div class="hp-bar"><div id="hp-boss" class="hp-fill boss-fill"></div></div>
+            <div id="hp-boss-text">100/100</div>
+          </div>
+
+          <div id="question-card" class="question-card">
+            <p id="question-text">Question will appear here</p>
+            <div id="answer-list" class="answer-list"></div>
+          </div>
+
+          <p id="battle-msg" class="battle-msg"></p>
+
+          <div class="row">
+            <button id="btn-next" class="btn-primary" disabled>Next</button>
+            <button id="btn-surrender" class="btn-ghost">Surrender</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="scene-victory" class="scene">
+        <div class="card">
+          <h2 id="victory-title">Victory!</h2>
+          <p id="victory-text"></p>
+          <div class="row">
+            <button id="btn-continue-campaign" class="btn-primary">Next Era</button>
+            <button id="btn-return-map" class="btn-ghost">Return to Map</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>Made for revision — Edexcel Medicine through Time</small>
+    </footer>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
